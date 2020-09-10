@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Buscador from "./Components/Buscador";
+import Tarjeta from "./Components/Tarjeta";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app container">
+            <div className="jumbotron">
+                <div className="lead text-center form-group col-md-12">
+                    <h1>SpotifyX</h1>
+                </div>
+                <br/>
+                <Buscador/>
+                <br/>
+                <Tarjeta/>
+
+            </div>
+        </div>
+    );
 }
 
 export default App;
